@@ -201,11 +201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Lib\\gametop.Lib.csproj",
+      "projectUniqueName": "c:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.lib\\gametop.Lib.csproj",
       "projectName": "gametop.Lib",
-      "projectPath": "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Lib\\gametop.Lib.csproj",
+      "projectPath": "c:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.lib\\gametop.Lib.csproj",
       "packagesPath": "C:\\Users\\ricardo-favaro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Lib\\obj\\",
+      "outputPath": "c:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.lib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -222,8 +222,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Interface\\gametop.Interface.csproj": {
-              "projectPath": "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Interface\\gametop.Interface.csproj"
+            "c:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Interface\\gametop.Interface.csproj": {
+              "projectPath": "c:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Interface\\gametop.Interface.csproj"
             }
           }
         }
