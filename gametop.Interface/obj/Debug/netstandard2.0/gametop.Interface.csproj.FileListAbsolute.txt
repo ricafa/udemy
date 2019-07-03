@@ -1,0 +1,9 @@
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop.Interface\bin\Debug\netstandard2.0\gametop.Interface.deps.json
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop.Interface\bin\Debug\netstandard2.0\gametop.Interface.dll
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop.Interface\bin\Debug\netstandard2.0\gametop.Interface.pdb
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop.Interface\obj\Debug\netstandard2.0\gametop.Interface.csprojAssemblyReference.cache
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop.Interface\obj\Debug\netstandard2.0\gametop.Interface.csproj.CoreCompileInputs.cache
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop.Interface\obj\Debug\netstandard2.0\gametop.Interface.AssemblyInfoInputs.cache
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop.Interface\obj\Debug\netstandard2.0\gametop.Interface.AssemblyInfo.cs
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop.Interface\obj\Debug\netstandard2.0\gametop.Interface.dll
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop.Interface\obj\Debug\netstandard2.0\gametop.Interface.pdb

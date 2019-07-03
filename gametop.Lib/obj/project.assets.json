@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "gametop.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/gametop.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gametop.Interface.dll": {}
+        }
       }
     }
   },
@@ -171,11 +181,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "gametop.Interface/1.0.0": {
+      "type": "project",
+      "path": "../gametop.Interface/gametop.Interface.csproj",
+      "msbuildProject": "../gametop.Interface/gametop.Interface.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "gametop.Interface >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -205,7 +221,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Interface\\gametop.Interface.csproj": {
+              "projectPath": "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Interface\\gametop.Interface.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

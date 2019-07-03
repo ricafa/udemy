@@ -9,3 +9,8 @@ C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop\obj\Debug\netcoreapp2.2\ga
 C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop\obj\Debug\netcoreapp2.2\gametop.AssemblyInfo.cs
 C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop\obj\Debug\netcoreapp2.2\gametop.dll
 C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop\obj\Debug\netcoreapp2.2\gametop.pdb
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop\bin\Debug\netcoreapp2.2\gametop.Interface.dll
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop\bin\Debug\netcoreapp2.2\gametop.Lib.dll
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop\bin\Debug\netcoreapp2.2\gametop.Lib.pdb
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop\bin\Debug\netcoreapp2.2\gametop.Interface.pdb
+C:\Users\ricardo-favaro\projetos\DOTNET\udemy\gametop\obj\Debug\netcoreapp2.2\gametop.csproj.CopyComplete

@@ -207,6 +207,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "gametop.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/gametop.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gametop.Interface.dll": {}
+        }
+      },
+      "gametop.Lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "gametop.Interface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gametop.Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gametop.Lib.dll": {}
+        }
       }
     }
   },
@@ -678,11 +701,23 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "gametop.Interface/1.0.0": {
+      "type": "project",
+      "path": "../gametop.Interface/gametop.Interface.csproj",
+      "msbuildProject": "../gametop.Interface/gametop.Interface.csproj"
+    },
+    "gametop.Lib/1.0.0": {
+      "type": "project",
+      "path": "../gametop.Lib/gametop.Lib.csproj",
+      "msbuildProject": "../gametop.Lib/gametop.Lib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "gametop.Interface >= 1.0.0",
+      "gametop.Lib >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -692,11 +727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop\\gametop.csproj",
+      "projectUniqueName": "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop\\gametop.csproj",
       "projectName": "gametop",
-      "projectPath": "c:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop\\gametop.csproj",
+      "projectPath": "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop\\gametop.csproj",
       "packagesPath": "C:\\Users\\ricardo-favaro\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop\\obj\\",
+      "outputPath": "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -712,7 +747,14 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Interface\\gametop.Interface.csproj": {
+              "projectPath": "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Interface\\gametop.Interface.csproj"
+            },
+            "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Lib\\gametop.Lib.csproj": {
+              "projectPath": "C:\\Users\\ricardo-favaro\\projetos\\DOTNET\\udemy\\gametop.Lib\\gametop.Lib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
