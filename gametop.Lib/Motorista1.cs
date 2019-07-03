@@ -1,6 +1,6 @@
 using System;
 
-namespace gametop
+namespace gametop.Lib
 {
     public class Motorista1 : iMotorista
     {
