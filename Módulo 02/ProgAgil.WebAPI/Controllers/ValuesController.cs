@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ProgAgil.WebAPI.Model;
+using ProgAgil.WebAPI.Data;
 
 namespace ProgAgil.WebAPI.Controllers
 {
@@ -11,50 +12,23 @@ namespace ProgAgil.WebAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private DataContext _context;
+
+        public ValuesController(DataContext context){
+            _context = context;
+        }
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<Evento>> Get()
         {
-            return new Evento[] {
-                new Evento(){
-                    EventoId = 1,
-                    Tema     = "Angular e .net Core",
-                    Local    = "BelZonte",
-                    Lote     = " 1st Lote",
-                    QtdPessoas= 250 ,
-                    DataEvento = DateTime.Now.AddDays(2).ToString("dd/MM/yyyy")
-                },new Evento(){
-                    EventoId = 2,
-                    Tema     = "Angular e suas novidades",
-                    Local    = "Beraba",
-                    Lote     = "20th Lote",
-                    QtdPessoas=100 ,
-                    DataEvento = DateTime.Now.AddDays(20).ToString("dd/MM/yyyy")
-                }
-             };
+            return _context.Eventos.ToList();
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<Evento> Get(int id)
         {
-             return new Evento[] {
-                new Evento(){
-                    EventoId = 1,
-                    Tema     = "Angular e .net Core",
-                    Local    = "BelZonte",
-                    Lote     = " 1st Lote",
-                    QtdPessoas= 250 ,
-                    DataEvento = DateTime.Now.AddDays(2).ToString("dd/MM/yyyy")
-                },new Evento(){
-                    EventoId = 2,
-                    Tema     = "Angular e suas novidades",
-                    Local    = "Beraba",
-                    Lote     = "20th Lote",
-                    QtdPessoas=100 ,
-                    DataEvento = DateTime.Now.AddDays(20).ToString("dd/MM/yyyy")
-                }
-             }.FirstOrDefault(x => x.EventoId == id);
+             return _context.Eventos.FirstOrDefault(x => x.EventoId == id);
         }
 
         // POST api/values
