@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ProgAgil.WebAPI.Model;
 using ProgAgil.WebAPI.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace ProgAgil.WebAPI.Controllers
 {
@@ -19,9 +20,18 @@ namespace ProgAgil.WebAPI.Controllers
         }
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<Evento>> Get()
+        public IActionResult Get()
         {
-            return _context.Eventos.ToList();
+            try
+            {
+                var results = _context.Eventos.ToList();
+                return Ok(results);
+            }
+            catch (System.Exception)
+            {
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Banco de Dados Falhou");
+            }
+            
         }
 
         // GET api/values/5
