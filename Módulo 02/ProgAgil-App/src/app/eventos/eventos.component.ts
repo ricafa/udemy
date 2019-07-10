@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./eventos.component.css']
 })
 export class EventosComponent implements OnInit {
-  eventos: any;
+  eventos: any = [];
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
