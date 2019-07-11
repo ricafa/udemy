@@ -16,6 +16,6 @@ namespace ProgAgil.Domain
         public string Lote { get; set; }
         public List<Lote> Lotes { get; set; }
         public List<RedeSocial> RedesSociais { get; set; }
-        public List<PalestranteEvento> PalestranteEventos { get; set; }
+        public List<PalestranteEvento> PalestrantesEventos { get; set; }
     }
 }
