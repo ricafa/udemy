@@ -11,8 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using ProgAgil.WebAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using ProgAgil.Repository;
+using ProgAgil.Domain;
 
 namespace ProgAgil.WebAPI
 {
@@ -29,7 +30,7 @@ namespace ProgAgil.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             //services.addDbContext<DataContext>(x => x.useSqlite());
-            services.AddDbContext<DataContext>(
+            services.AddDbContext<ProAgilContext>(
                 x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
                 );
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

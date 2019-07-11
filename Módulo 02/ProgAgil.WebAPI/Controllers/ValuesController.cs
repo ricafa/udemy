@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using ProgAgil.WebAPI.Model;
-using ProgAgil.WebAPI.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using ProgAgil.Repository;
+using ProgAgil.Domain;
 
 namespace ProgAgil.WebAPI.Controllers
 {
@@ -14,9 +14,9 @@ namespace ProgAgil.WebAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private DataContext _context;
+        private ProAgilContext _context;
 
-        public ValuesController(DataContext context){
+        public ValuesController(ProAgilContext context){
             _context = context;
         }
         // GET api/values
@@ -40,7 +40,7 @@ namespace ProgAgil.WebAPI.Controllers
         {
               try
             {
-                var results = await _context.Eventos.FirstOrDefaultAsync(x => x.EventoId == id);
+                var results = await _context.Eventos.FirstOrDefaultAsync(x => x.Id == id);
                 return Ok(results);
             }
             catch (System.Exception)
