@@ -13,7 +13,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using ProgAgil.Repository;
-using ProgAgil.Domain;
 
 namespace ProgAgil.WebAPI
 {
