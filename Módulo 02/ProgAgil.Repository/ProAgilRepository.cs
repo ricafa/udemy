@@ -1,8 +1,8 @@
 using System.Linq;
 using System;
 using ProgAgil.Repository;
-using System.Linq;
-using System.Include;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace ProgAgil.Repository
 {
