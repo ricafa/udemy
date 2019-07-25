@@ -1,3 +1,6 @@
+using ProgAgil.Domain;
+using System.Threading.Tasks;
+
 namespace ProgAgil.Repository
 {
     public interface IProAgilRepository

@@ -3,6 +3,8 @@ using System;
 using ProgAgil.Repository;
 using System.Threading;
 using System.Threading.Tasks;
+using ProgAgil.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProgAgil.Repository
 {
@@ -15,6 +17,11 @@ namespace ProgAgil.Repository
         {
             _context = context;
         }
+
+        public ProAgilRepository()
+        {
+        }
+
         public void Add<T>(T entity) where T: class
         {
             _context.Add(entity);
@@ -23,7 +30,7 @@ namespace ProgAgil.Repository
         {
             _context.Update(entity);
         }
-        public void Delete<T>(T entity) where T : class
+        public async Task<bool> Delete<T>(T entity) where T : class
         {
             return (await _context.Remove(entity)) > 0;
         }
@@ -41,7 +48,7 @@ namespace ProgAgil.Repository
             if(includePalestrantes)
             {
                 query = query
-                .Include(p => p.PalestranteEventos)
+                .Include(p => p.PalestrantesEventos)
                 .ThenInclude(p => p.Palestrante);
             }
 
@@ -74,7 +81,7 @@ namespace ProgAgil.Repository
 
             if(includePalestrantes)
             {
-                query = query.Include(p => p.PalestranteEventos)
+                query = query.Include(p => p.PalestrantesEventos)
                 .ThenInclude(p => p.Palestrante);
             }
   
